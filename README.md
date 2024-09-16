@@ -43,6 +43,7 @@ kubectl apply -f k8s/account-deployment.yml --namespace devops
 #### 5. Expose the Application Using a Kubernetes Service
 
 ```bash
+kubectl apply -f k8s/mysql-service.yml --namespace devops
 kubectl apply -f k8s/account-service.yml --namespace devops
 ```
 #### 6. Check the service URL with Minikube
